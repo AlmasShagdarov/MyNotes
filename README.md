@@ -1,23 +1,31 @@
-# Notes App 
+# ![MyNotes](https://img.techpowerup.org/200412/app-icon.png)
 
-![](screenDemo.gif)
+Notes is the best place to jot down quick thoughts or to save longer notes
 
-## Screenshots
+## Demo
+![](app/demo/demo.gif)
 
-<img src="https://i.postimg.cc/yYxj3rDm/photo5397976947461565322.jpg" width="216px"/> <img src="https://i.postimg.cc/Nfn467XW/photo5397976947461565323.jpg" width="216px"/> <img src="https://i.postimg.cc/NFJxPRz2/photo5397580826922822564.jpg" width="216px"/>  
+### Screenshots
 
-## Dependencies
-```gradle
-dependencies {
- - version_core = "1.1.0"
- - version_coroutine = "1.0.0"
- - version_navigation = "2.1.0"
- - version_constraint_layout = "1.1.3"
- - version_gradle = '3.5.2'
- - version_kotlin = "1.3.21"
- - version_lifecycle_extensions = "2.1.0"
- - version_room = "2.2.2"
- - version_appcompat = "1.1.0"
- - version_fragment = "1.1.0"      
-}
-```
+<img src="https://img.techpowerup.org/200412/photo5231365949049908433.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908429.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908432.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908431.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908430.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908434.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908428.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908427.jpg" width="216px"/>
+<img src="https://img.techpowerup.org/200412/photo5231365949049908426.jpg" width="216px"/>
+
+#### Features
+
+* Coroutines
+* ViewModel
+* Livedata
+* DataBinding
+* Room
+* CardView
+* RecyclerView with MultiSelection
+* MVVM
+* Shared elements transition
+* Localization
