@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="bold_typeface">Bold Typeface</string>
+    <string name="italic_typeface">Italic Typeface</string>
+    <string name="underlined_font">Underlined Font</string>
+    <string name="strikeThrough_font">StrikeThrough Font</string>
+    <string name="bullet_list_font">Bullet List Font</string>
+    <string name="new_note_title">New note</string>
+    <string name="edittext_hint">What\'s on your mind?..</string>
+    <string name="new_note">New note</string>
+    <string name="search">Search</string>
+    <string name="delete_selected_tasks">Delete selected tasks</string>
+    <string name="are_you_sure">Are you sure you want delete this tasks?</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="tasks_successfully_deleted">Tasks successfully deleted</string>
+</resources>

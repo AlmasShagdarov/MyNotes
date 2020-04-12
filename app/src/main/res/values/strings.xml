@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мои заметки</string>
+    <string name="bold_typeface">Bold Typeface</string>
+    <string name="italic_typeface">Italic Typeface</string>
+    <string name="underlined_font">Underlined Font</string>
+    <string name="strikeThrough_font">StrikeThrough Font</string>
+    <string name="bullet_list_font">Bullet List Font</string>
+    <string name="new_note_title">Новая заметка</string>
+    <string name="edittext_hint">Напиши о том что на уме?..</string>
+    <string name="new_note">Новая заметка</string>
+    <string name="search">Поиск</string>
+    <string name="delete_selected_tasks">Удаление выбранных заметок</string>
+    <string name="are_you_sure">Вы уверены что хотите удалить выбранные заметки?</string>
+    <string name="cancel">Отмена</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="tasks_successfully_deleted">Заметки успешно удалены</string>
+</resources>
