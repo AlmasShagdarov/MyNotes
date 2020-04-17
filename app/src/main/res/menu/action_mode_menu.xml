@@ -6,13 +6,13 @@
         android:id="@+id/selectAll"
         android:icon="@drawable/ic_select_task"
         app:showAsAction="always"
-        android:title="Select all">
+        android:title="@string/select_all">
     </item>
 
     <item
         android:id="@+id/deleteItems"
         android:icon="@drawable/ic_delete_task"
         app:showAsAction="always"
-        android:title="Delete All Task">
+        android:title="@string/delete_all_task">
     </item>
 </menu>

@@ -15,4 +15,6 @@
     <string name="cancel">Cancel</string>
     <string name="confirm">Confirm</string>
     <string name="tasks_successfully_deleted">Tasks successfully deleted</string>
+    <string name="select_all">Select all</string>
+    <string name="delete_all_task">Delete All Task</string>
 </resources>

@@ -13,7 +13,8 @@
         android:allowBackup="false">
         <activity
             android:name=".ToDoListActivity"
-            android:windowSoftInputMode="adjustResize">
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

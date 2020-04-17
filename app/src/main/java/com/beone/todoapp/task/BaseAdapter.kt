@@ -10,7 +10,7 @@ import com.beone.todoapp.R
 
 
 class ListExampleAdapter(context: Context, private val list: Array<Int>) : BaseAdapter() {
-    private val mInflator: LayoutInflater = LayoutInflater.from(context)
+    private val inflator: LayoutInflater = LayoutInflater.from(context)
 
     override fun getCount(): Int {
         return list.size
@@ -25,7 +25,7 @@ class ListExampleAdapter(context: Context, private val list: Array<Int>) : BaseA
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View? {
-        val spinView = mInflator.inflate(R.layout.spinner_item, null)
+        val spinView = inflator.inflate(R.layout.spinner_item, null)
         val imageView = spinView.findViewById(R.id.img_color) as ImageView
         imageView.setImageResource(list[position])
         return spinView

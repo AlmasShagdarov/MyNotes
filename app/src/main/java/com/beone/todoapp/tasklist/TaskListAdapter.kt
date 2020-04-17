@@ -29,8 +29,7 @@ class TaskAdapter(private val itemClick: OnItemClick) :
         return ViewHolder.from(parent)
     }
 
-    override fun submitList(list: List<Task>?) {
-        super.submitList(list)
+    fun setAdapterList(list: List<Task>){
         adapterList = list
     }
 
@@ -52,6 +51,15 @@ class TaskAdapter(private val itemClick: OnItemClick) :
     }
 
     fun setSelectionAll(){
+        adapterList?.let{
+            for (i in it.indices) {
+                isSelectedAll = when (selectedItems.get(i, false)) {
+                    true -> true
+                    false -> false
+                }
+            }
+        }
+
         adapterList?.let {
             for (i in it.indices) {
                 when (isSelectedAll) {
@@ -60,7 +68,7 @@ class TaskAdapter(private val itemClick: OnItemClick) :
                 }
             }
         }
-        isSelectedAll = !isSelectedAll
+
         notifyDataSetChanged()
     }
 

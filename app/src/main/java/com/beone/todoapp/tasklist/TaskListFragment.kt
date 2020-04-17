@@ -27,7 +27,6 @@ class TaskListFragment : Fragment() {
     private lateinit var actionCallback: ActionCallback
     private var actionMode: ActionMode? = null
     private lateinit var searchView: SearchView
-
     private val taskListViewModel: TaskListViewModel by viewModels {
         TaskListViewModelFactory(requireActivity().application)
     }
@@ -143,12 +142,21 @@ class TaskListFragment : Fragment() {
         actionMode!!.invalidate()
     }
 
-
     private fun observeTasks() {
         taskListViewModel.tasks.observe(viewLifecycleOwner, Observer {
             binding.listIsEmpty = !it.isNullOrEmpty()
+            adapter.setAdapterList(it)
             adapter.submitList(it)
+            clearSelectedItems()
         })
+    }
+
+    private fun clearSelectedItems() {
+        adapter.clearSelection()
+        actionMode?.let {
+            it.title = adapter.selectedItemCount().toString()
+            it.invalidate()
+        }
     }
 
     private fun navigateToTask(task: Task, view: View) {
@@ -170,7 +178,9 @@ class TaskListFragment : Fragment() {
         val selectedItemPositions = adapter.getSelectedItems()
         val deleteList = arrayListOf<Long>()
         for (i in selectedItemPositions!!.indices.reversed()) {
-            deleteList.add(adapter.getItemTask(selectedItemPositions[i]).taskId)
+            val position = selectedItemPositions[i]
+            val taskId = adapter.getItemTask(position).taskId
+            deleteList.add(taskId)
         }
         taskListViewModel.onDeleteSelectedTasks(deleteList)
         adapter.notifyDataSetChanged()
@@ -224,6 +234,7 @@ class TaskListFragment : Fragment() {
             dialog.getButton(AlertDialog.BUTTON_NEGATIVE).setTextColor(negativeColor)
         }
         dialog.show()
+        searchView.onActionViewCollapsed()
     }
 
     private fun showSnackBar() {
